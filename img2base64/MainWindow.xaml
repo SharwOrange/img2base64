@@ -1,0 +1,23 @@
+﻿<Window x:Class="img2base64.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:img2base64"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="360" Width="600">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="NoWrap" Text="img 2 base64" VerticalAlignment="Top" Margin="0,25,0,0" FontSize="18"/>
+        
+        <!--这是图片部分-->
+        <TextBlock HorizontalAlignment="Left" TextWrapping="NoWrap" Text="img" VerticalAlignment="Top" Margin="50,75,0,0" FontSize="18"/>
+        <TextBox x:Name="FileName" HorizontalAlignment="Left" Margin="50,115,0,0" TextWrapping="NoWrap" Text="Please select a image!" VerticalAlignment="Top" MaxWidth="150" IsReadOnly="True"/>
+        <Button Content="Select Image" HorizontalAlignment="Left" Margin="50,145,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        
+        <!--base64部分-->
+        <TextBlock HorizontalAlignment="Right" TextWrapping="NoWrap" Text="base64" VerticalAlignment="Top" Margin="0,75,50,0" FontSize="18"/>
+
+        <!--日志-->
+        
+    </Grid>
+</Window>
