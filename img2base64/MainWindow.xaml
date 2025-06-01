@@ -5,19 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:img2base64"
         mc:Ignorable="d"
-        Title="MainWindow" Height="360" Width="600">
+        Title="图片转base64" Height="360" Width="600" ResizeMode="NoResize">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="NoWrap" Text="img 2 base64" VerticalAlignment="Top" Margin="0,25,0,0" FontSize="18"/>
-        
+        <TextBlock HorizontalAlignment="Center" TextWrapping="NoWrap" Text="图片转base64" VerticalAlignment="Top" Margin="0,25,0,0" FontSize="18"/>
+        <Button Content="开始转换" HorizontalAlignment="Center" Margin="0,215,0,0" VerticalAlignment="Top" Click="Encode_Button_Click" Width="100"/>
         <!--这是图片部分-->
-        <TextBlock HorizontalAlignment="Left" TextWrapping="NoWrap" Text="img" VerticalAlignment="Top" Margin="50,75,0,0" FontSize="18"/>
-        <TextBox x:Name="FileName" HorizontalAlignment="Left" Margin="50,115,0,0" TextWrapping="NoWrap" Text="Please select a image!" VerticalAlignment="Top" MaxWidth="150" IsReadOnly="True"/>
-        <Button Content="Select Image" HorizontalAlignment="Left" Margin="50,145,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        
+        <TextBlock HorizontalAlignment="Left" TextWrapping="NoWrap" Text="图片部分" VerticalAlignment="Top" Margin="50,50,0,0" FontSize="18"/>
+        <TextBox x:Name="FileName" HorizontalAlignment="Left" Margin="50,90,0,0" TextWrapping="NoWrap" Text="请选择一个文件!" VerticalAlignment="Top" MaxWidth="250" IsReadOnly="True"/>
+        <Button Content="选择图片" HorizontalAlignment="Left" Margin="50,120,0,0" VerticalAlignment="Top" Click="Select_Button_Click"/>
+
         <!--base64部分-->
-        <TextBlock HorizontalAlignment="Right" TextWrapping="NoWrap" Text="base64" VerticalAlignment="Top" Margin="0,75,50,0" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Right" TextWrapping="NoWrap" Text="base64部分" VerticalAlignment="Top" Margin="0,50,50,0" FontSize="18"/>
+        <TextBox x:Name="Base64Result" HorizontalAlignment="Right" Margin="0,90,50,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Height="100" IsReadOnly="True"  VerticalScrollBarVisibility="Auto"/>
+        <Button Content="复制" HorizontalAlignment="Right" Margin="0,195,50,0" VerticalAlignment="Top" Width="100" Click="Copy_Button_Click"/>
 
         <!--日志-->
-        
+        <TextBox x:Name="LogBox" Text="程序准备完毕(程序由SharwOrange开发，以MIT协议开源)"  HorizontalAlignment="Center" Margin="0,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580" Height="70" IsReadOnly="True" VerticalScrollBarVisibility="Auto"/>
     </Grid>
 </Window>
