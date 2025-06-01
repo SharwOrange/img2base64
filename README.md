@@ -19,9 +19,7 @@
 	- 桌面应用和移动应用
 		- .NET 桌面开发
 
-SDK：
-
-[.NET SDK 8.0](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0)
+SDK：[.NET SDK 8.0](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0)
 
 本程序使用WPF进行开发，此为[微软官方文档](https://learn.microsoft.com/zh-cn/dotnet/desktop/wpf/)
 
